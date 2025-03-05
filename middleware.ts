@@ -9,7 +9,7 @@ const ALLOWED_IPS = allowedIpsEnv.split(',').map(ip => ip.trim());
 
 // Get allowed countries from environment variables or use defaults for testing
 // Format: comma-separated list of country codes
-const allowedCountriesEnv = process.env.ALLOWED_COUNTRIES || 'US,CA,GB,AU';
+const allowedCountriesEnv = process.env.ALLOWED_COUNTRIES || 'US,CA,AU';
 const ALLOWED_COUNTRIES = allowedCountriesEnv.split(',').map(country => country.trim());
 
 // For testing: If this query parameter is present, it will be used as the allowed IP
